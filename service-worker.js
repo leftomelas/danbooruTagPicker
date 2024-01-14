@@ -48,6 +48,12 @@ function copyToClipbordTag() {
   tagstring = tagstring.replace(/_/g, " ");
   tagstring = tagstring.replace(/\(/g, "\\\(");
   tagstring = tagstring.replace(/\)/g, "\\\)");
+  
+  tagstring = tagstring.replace(/\[/g, "\\\[");
+  tagstring = tagstring.replace(/\]/g, "\\\]");
+  
+  tagstring = tagstring.replace(/\</g, "\\\<");
+  tagstring = tagstring.replace(/\>/g, "\\\>");
 
   //不要な人はコメントアウトしてね？
   tagstring += ",masterpiece,best quality"  
