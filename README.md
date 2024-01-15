@@ -2,6 +2,9 @@
 これはchromeの拡張です、開いたdanbooruからanimagine ver3.0の推奨する並び順でクリップボードにコピーします  
 This is a chrome extension that copies from the opened danbooru to the clipboard in the order recommended by animagine ver 3.0  
   
+## ver0.3  
+検索結果のtagsも抽出対象に変更  
+  
 ## ver0.2  
 ちょっとだけ大規模にほぼ作り直し  
 前のバージョンでカスタマイズした人ごめんねー、もう一回カスタマイズできるよ！  

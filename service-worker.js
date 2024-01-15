@@ -113,6 +113,9 @@ function copyToClipbordTag() {
   tags = tags.concat(getTagFromDanbooru('ul.copyright-tag-list'));
   tags = tags.concat(getTagFromDanbooru('ul.general-tag-list'));
 
+  //タグの検索結果ページのtagsを対象に抽出
+  tags = tags.concat(getTagFromDanbooru('ul.search-tag-list'));
+
 
   //除外タグ、完全一致
   //かっこのエスケープ不要、アンダーバーありなしどっちでもＯＫ
@@ -184,7 +187,7 @@ function copyToClipbordTag() {
 
 
 chrome.action.onClicked.addListener((tab) => {
-  if (tab.url.includes('https://danbooru.donmai.us/posts/')) {
+  if (tab.url.includes('https://danbooru.donmai.us/posts')) {
     chrome.scripting.executeScript({
       target: { tabId: tab.id },
       function: copyToClipbordTag

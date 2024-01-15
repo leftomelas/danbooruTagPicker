@@ -7,7 +7,7 @@
     }
   },
   "manifest_version": 3,
-  "version": "0.2",
+  "version": "0.3",
   "description": "Open danbooru's image page and click on the extension icon to copy the tags to the clipboard in the order specified by animagine.Paste into the stablediffusion prompt",
   "permissions": [
     "activeTab",
